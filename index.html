@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <div id="pagepiling">
+        <div class="section">
+            <div class="col-md-6 toggleHide pad-col justify">
+                <h3>Les contaré una historia que cambió mi manera de ver el mundo y nuestra empresa. Hace 11 años me ofrecí a dirigir empresas Dimerc, dónde el gran desafío era hacernos crecer y duplicar la compañía, ¿Pero qué tan grandes eran las pruebas con que nos íbamos a enfrentar?</h3>
+            </div>
+            <div class="col-md-6 toggleHide pad-col justify">
+                <a href="" class=" pulse circle c1"></a>
+                <a href="" class=" pulse circle c2"></a>
+                <a href="" class=" pulse circle c3"></a>
+                <a class=" btn btn-danger inside-section-btn">Open</a>
+                <div class="inside-section">
+                    <a class="btn btn danger btn-inside-close">X</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="col-md-6 pad-col justify">
+                <h3>Y el año 2007 se nos presentó uno de los más bellos desafíos. Llegó Pancho, un joven con Sindrome de Down que quería trabajar con nosotros</h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="col-md-6 pad-col justify">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquam cum, quae assumenda, nisi illum facere, laudantium aliquid optio delectus molestiae? Dolorem explicabo corporis minus provident doloribus voluptatem asperiores dolorum.</h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="col-md-6 pad-col justify">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquam cum, quae assumenda, nisi illum facere, laudantium aliquid optio delectus molestiae? Dolorem explicabo corporis minus provident doloribus voluptatem asperiores dolorum.</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.pagepiling.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+                menu: null,
+                direction: 'vertical',
+                verticalCentered: true,
+                sectionsColor: [],
+                anchors: [],
+                scrollingSpeed: 700,
+                easing: 'swing',
+                loopBottom: false,
+                loopTop: false,
+                css3: true,
+                navigation: {
+                    'textColor': '#000',
+                    'bulletsColor': '#000',
+                    'position': 'right',
+                    'tooltips': ['section1', 'section2', 'section3', 'section4']
+                },
+                normalScrollElements: null,
+                normalScrollElementTouchThreshold: 5,
+                touchSensitivity: 5,
+                keyboardScrolling: true,
+                sectionSelector: '.section',
+                animateAnchor: false,
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'beige', '#000'],
+
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+            });
+        });
+    </script>
+    <script>
+        $('.inside-section-btn').click(function() {
+            $('.toggleHide').addClass('hidden');
+            $('.inside-section').show('slow');
+            $('.btn-inside-close').show('slow');
+        });
+        $('.btn-inside-close').click(function() {
+            $('.toggleHide').removeClass('hidden');
+            $('.inside-section').hide('slow');
+        });
+        
+    </script>
+
+</body>
+</html>
