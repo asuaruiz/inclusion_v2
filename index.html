@@ -19,16 +19,15 @@
 
     <div id="pagepiling">
         <div class="section">
-            <div class="col-md-6 toggleHide pad-col justify">
+            <div class="col-md-6 pad-col justify">
                 <h3>Les contaré una historia que cambió mi manera de ver el mundo y nuestra empresa. Hace 11 años me ofrecí a dirigir empresas Dimerc, dónde el gran desafío era hacernos crecer y duplicar la compañía, ¿Pero qué tan grandes eran las pruebas con que nos íbamos a enfrentar?</h3>
             </div>
-            <div class="col-md-6 toggleHide pad-col justify">
-                <a href="" class=" pulse circle c1"></a>
-                <a href="" class=" pulse circle c2"></a>
-                <a href="" class=" pulse circle c3"></a>
-                <a class=" btn btn-danger inside-section-btn">Open</a>
-                <div class="inside-section">
-                    <a class="btn btn danger btn-inside-close">X</a>
+            <div class="col-md-6">
+                <a id="btn-1" class="btn btn-danger btn-toggle-img">Show</a>
+                <a id="btn-2" class="btn btn-danger btn-toggle-img">Show</a>
+                <a id="btn-3" class="btn btn-danger btn-toggle-img">Show</a>
+                <div class="img-1 hidden">
+                    <div class="close-btn">X</div>
                 </div>
             </div>
 
@@ -94,7 +93,7 @@
             </div>
         </div>
     </div>
-
+    <div id="close-btn">X</div>
 
 
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -138,14 +137,21 @@
         });
     </script>
     <script>
-        $('.inside-section-btn').click(function() {
-            $('.toggleHide').addClass('hidden');
-            $('.inside-section').show('slow');
-            $('.btn-inside-close').show('slow');
+        $('#btn-1').click(function() {
+            /* Act on the event */
+            $('#btn-2').addClass('hidden');
+            $('#btn-1').addClass('hidden');
+            $('#btn-3').addClass('hidden');
+            $('.img-1').removeClass('hidden');
+            $('.img-1').animate({height: 400, width: 500}, 400);
         });
-        $('.btn-inside-close').click(function() {
-            $('.toggleHide').removeClass('hidden');
-            $('.inside-section').hide('slow');
+        $('.close-btn').click(function() {
+            /* Act on the event */
+            $('.img-1').addClass('hidden');
+            $('#btn-2').removeClass('hidden');
+            $('#btn-3').removeClass('hidden');
+            $('#btn-1').removeClass('hidden');
+            
         });
         
     </script>
