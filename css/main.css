@@ -319,7 +319,15 @@
   background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
   position: absolute;
 }
-.close-btn{
+.img-2{
+  background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
+  position: absolute;
+}
+.img-3{
+  background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
+  position: absolute;
+}
+.close-btn-1, .close-btn-2, .close-btn-3{
   position: absolute;
   top: 10px;
   right: 10px;

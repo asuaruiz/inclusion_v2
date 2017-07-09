@@ -27,8 +27,15 @@
                 <a id="btn-2" class="btn btn-danger btn-toggle-img">Show</a>
                 <a id="btn-3" class="btn btn-danger btn-toggle-img">Show</a>
                 <div class="img-1 hidden">
-                    <div class="close-btn">X</div>
+                    <div class="close-btn-1">X</div>
                 </div>
+                <div class="img-2 hidden">
+                    <div class="close-btn-2">X</div>
+                </div>
+                <div class="img-3 hidden">
+                    <div class="close-btn-3">X</div>
+                </div>
+
             </div>
 
         </div>
@@ -145,9 +152,41 @@
             $('.img-1').removeClass('hidden');
             $('.img-1').animate({height: 400, width: 500}, 400);
         });
-        $('.close-btn').click(function() {
+        $('.close-btn-1').click(function() {
             /* Act on the event */
             $('.img-1').addClass('hidden');
+            $('#btn-2').removeClass('hidden');
+            $('#btn-3').removeClass('hidden');
+            $('#btn-1').removeClass('hidden');
+            
+        });
+        $('#btn-2').click(function() {
+            /* Act on the event */
+            $('#btn-2').addClass('hidden');
+            $('#btn-1').addClass('hidden');
+            $('#btn-3').addClass('hidden');
+            $('.img-2').removeClass('hidden');
+            $('.img-2').animate({height: 400, width: 500}, 400);
+        });
+        $('.close-btn-2').click(function() {
+            /* Act on the event */
+            $('.img-2').addClass('hidden');
+            $('#btn-2').removeClass('hidden');
+            $('#btn-3').removeClass('hidden');
+            $('#btn-1').removeClass('hidden');
+            
+        });
+        $('#btn-3').click(function() {
+            /* Act on the event */
+            $('#btn-2').addClass('hidden');
+            $('#btn-1').addClass('hidden');
+            $('#btn-3').addClass('hidden');
+            $('.img-3').removeClass('hidden');
+            $('.img-3').animate({height: 400, width: 500}, 400);
+        });
+        $('.close-btn-3').click(function() {
+            /* Act on the event */
+            $('.img-3').addClass('hidden');
             $('#btn-2').removeClass('hidden');
             $('#btn-3').removeClass('hidden');
             $('#btn-1').removeClass('hidden');
