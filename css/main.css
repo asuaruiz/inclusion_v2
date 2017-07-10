@@ -310,26 +310,61 @@
   .justify{
     text-align: justify;
   }
-.btn-toggle-img{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.img-1{
-  background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
-  position: absolute;
-}
-.img-2{
-  background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
-  position: absolute;
-}
-.img-3{
-  background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
-  position: absolute;
-}
-.close-btn-1, .close-btn-2, .close-btn-3{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
+  .btn-toggle-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .img-1{
+    background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
+    position: absolute;
+  }
+  .img-2{
+    background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
+    position: absolute;
+  }
+  .img-3{
+    background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
+    position: absolute;
+  }
+  .close-btn-1, .close-btn-2, .close-btn-3{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  /*prueba menus*/
+
+  body {
+    margin: 0;
+  }
+  .menu {
+    /*this is the nav*/
+    background: #3c3933;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    right: -500px;
+  }
+
+  .push-left {
+    right: 0;
+  }
+  .bodypush {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+    height: 100vh;
+  }
+  .pushmenu-push-toright {
+    right: 500px;
+  }
+  /*Transition*/
+
+  .menu,
+  .bodypush {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }

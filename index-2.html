@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- EDICIONES PEDRO -->
+    <link rel="stylesheet" href="css/pedro.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway|Reenie+Beanie" rel="stylesheet">
+    <!-- FIN EDICIONES PEDRO -->
+
+</head>
+<body class="bodypush">
+    <div class="menu"></div>
+    <div id="pagepiling">
+        <div class="section" id="main">
+            <div class="menu"></div>
+            <button class="click"></button>
+            <div class="col-md-6 pad-col">
+                <h1>El desafío más grande</h1>
+                <p class="bajada">La historia de cómo Pancho nos enseñó el valor de la diversidad.</p>
+            </div>
+            <div class="col-md-6">
+              <img id="il-arbol" title="" alt="" src="http://static.tumblr.com/dgfvkh2/Ltqm5gto4/arbolito-papel3b-copia.jpg">
+          </div>
+
+
+      </div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+    </div>
+    
+    <section class="content">
+      <h1>Slideout Navigation</h1>
+  </section>
+
+
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="js/vendor/jquery-1.12.0.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/jquery.pagepiling.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(function() {
+    $('#pagepiling').pagepiling();
+});
+    $(document).ready(function() {
+      $menuLeft = $('.menu');
+      $nav_list = $('.act');
+
+      $nav_list.click(function() {
+        $('.bodypush').toggleClass('pushmenu-push-toright');
+        $menuLeft.toggleClass('push-left');
+    });
+  });
+</script>
+<script>
+
+
+</script>
+
+</body>
+</html>
