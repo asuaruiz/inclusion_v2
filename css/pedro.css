@@ -35,4 +35,5 @@ p.bajada{
 }
 img#il-arbol{
   height: 500px;
+  cursor: pointer;
 }

@@ -327,11 +327,28 @@
     background-image: url('https://dummyimage.com/500x400/d2d457/fff.png');
     position: absolute;
   }
+  #btn-1{
+    position: absolute;
+    left: 38px;
+    top: 140px;
+  }
+  #btn-2{
+    position: absolute;
+    left: 186px;
+  }
+  #btn-3{
+    position: absolute;
+    top: 221px;
+    right: 191px;
+  }
   .close-btn-1, .close-btn-2, .close-btn-3{
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
+  }
+  .marg-35{
+    margin-top: 35%;
   }
   /*prueba menus*/
 
