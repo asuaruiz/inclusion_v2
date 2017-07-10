@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Comunidad</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="https://www.dimerc.cl/media/favicon/default/favicon_nuevo.ico" type="image/x-icon" />
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="css/vendor/jquery.pagepiling.min.css">
@@ -19,10 +18,14 @@
     <!-- FIN EDICIONES PEDRO -->
 
 </head>
-<body class="bodypush">
+<body class="bodypush bodypush-top">
+<div class="menu-top">
+          
+        </div>
     <div class="menu">
         <div class="marg-35"><img class="img-responsive" title="" alt="" src="https://dummyimage.com/500x400/d2d457/fff.png"></div>
     </div>
+
     <div id="pagepiling" class="">
         <div class="section" id="main">
             <!--<button class="act"></button>-->
@@ -38,7 +41,8 @@
 
       </div>
       <div class="section">
-      <div class="col-md-1"></div>
+
+        <div class="col-md-1"></div>
         <div class="col-md-6 pad-col">
             <p>Les contar&eacute; una historia que cambi&oacute; mi manera de ver el mundo y nuestra empresa. Hace 11 a&ntilde;os me ofrec&iacute; a dirigir empresas Dimerc, d&oacute;nde el gran desaf&iacute;o era hacernos crecer y duplicar la compa&ntilde;&iacute;a.
             </p>
@@ -47,7 +51,7 @@
           </div>
           <div class="col-md-5">
             <a id="btn-1" class="btn btn-toggle-img"></a>
-            <a id="btn-2" class="btn btn-toggle-img"></a>
+            <a id="btn-2" class="btn btn-toggle-img act"></a>
             <a id="btn-3" class="btn btn-toggle-img"></a>
             <div class="img-1 hidden">
                 <div class="close-btn-1">X</div>
@@ -63,19 +67,19 @@
 
     </div>
     <div class="section">
-    <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
         <div class="col-md-6 pad-col">
             <p>Poco tiempo despu&eacute;s, a comienzos del 2007 se nos present&oacute; uno de los m&aacute;s bellos desaf&iacute;os. Lleg&oacute; Pancho, un joven con Sindrome de Down que quer&iacute;a trabajar con nosotros</p>
             <p>En ese entonces Pancho no sab&iacute;a leer, ten&iacute;a dificultades de convivencia y para colmo, su familia no quer&iacute;a que trabajara.</p>
         </div>
     </div>
     <div class="section">
-    <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
         <div class="col-md-6 pad-col">
             <p>Pero decidimos incluirlo en la empresa y asumir juntos este nuevo camino</p>
             <p>¡Y los resultados fueron incre&iacute;bles!</p>
         </div>
-    </div>
+    </div>  
     <div class="section">
         <div class="col-md-1"></div>
         <div class="col-md-6 pad-col">
@@ -173,8 +177,7 @@
         $('#btn-1').removeClass('hidden');
 
     });
-    $('#btn-2').click(function() {
-        /* Act on the event */
+    /*$('#btn-2').click(function() {
         $('#btn-2').addClass('hidden');
         $('#btn-1').addClass('hidden');
         $('#btn-3').addClass('hidden');
@@ -182,20 +185,24 @@
         $('.img-2').animate({height: 400, width: 500}, 400);
     });
     $('.close-btn-2').click(function() {
-        /* Act on the event */
         $('.img-2').addClass('hidden');
         $('#btn-2').removeClass('hidden');
         $('#btn-3').removeClass('hidden');
         $('#btn-1').removeClass('hidden');
 
-    });
-    $('#btn-3').click(function() {
-        /* Act on the event */
+    });*/
+    /*$('#btn-3').click(function() {
+        /* Act on the event 
         $('#btn-2').addClass('hidden');
         $('#btn-1').addClass('hidden');
         $('#btn-3').addClass('hidden');
         $('.img-3').removeClass('hidden');
         $('.img-3').animate({height: 400, width: 500}, 400);
+    });*/
+    $('#btn-3').click(function(){
+        //$('body').removeClass('bodypush');
+        $('.bodypush-top').toggleClass('pushmenu-push-totop');
+        $('.menu-top').toggleClass('push-top');
     });
     $('.close-btn-3').click(function() {
         /* Act on the event */
@@ -210,6 +217,7 @@
       $nav_list = $('.act');
 
       $nav_list.click(function() {
+        //$('body').addClass('bodypush');
         $('.bodypush').toggleClass('pushmenu-push-toright');
         $menuLeft.toggleClass('push-left');
         //$menuLeft.appendTo('<div><img class="img-responsive" id="il-arbol" title="" alt="" src="https://dummyimage.com/500x400/d2d457/fff.png"></div>');

@@ -376,6 +376,27 @@
     position: fixed;
     right: -500px;
   }
+  .menu-top {
+    /*this is the nav*/
+    background: #3c3933;
+    width: 100%;
+    height: 300px;
+    top: -300px;
+    position: fixed;
+    z-index: 10
+  }
+  .bodypush-top {
+    overflow-y: hidden;
+    position:;
+    right: 0;
+    height: 100vh;
+  }
+  .push-top{
+    top: 0;
+  }
+  .pushmenu-push-totop {
+    top: 300px;
+  }
 
   .push-left {
     right: 0;
@@ -392,8 +413,8 @@
   /*Transition*/
 
   .menu,
-  .bodypush {
-    -webkit-transition: all 0.3s ease;
+  .bodypush,.menu-top,.bodypush-top {
+    -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
