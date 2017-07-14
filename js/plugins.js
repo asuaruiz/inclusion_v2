@@ -22,3 +22,10 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+    <script src="js/vendor/jquery.easings.min.js"></script>
+
+    <script type="text/javascript" src="js/vendor/jquery.fullPage.min.js"></script>
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="js/vendor/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="js/vendor/jquery.fullPage.min.js"></script>

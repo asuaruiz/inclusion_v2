@@ -444,3 +444,9 @@
 .firma{
   width: 230px;
 }
+.fp-controlArrow.fp-next{
+  border-color: transparent transparent transparent beige;
+}
+.fp-controlArrow.fp-prev{
+  border-color: transparent beige transparent transparent;
+}
